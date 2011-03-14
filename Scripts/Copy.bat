@@ -1,0 +1,1 @@
+copy ..\Build\Release\rFactorNesim.dll "C:\Program Files\rFactor\Plugins\"
