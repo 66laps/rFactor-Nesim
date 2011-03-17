@@ -44,9 +44,9 @@ void NesimPlugin::Startup()
     mConfiguration = new Configuration();
     mConfiguration->Read();
 
-    mTelemetryEnabled = mConfiguration->GetBool(kConfigurationDefaultTelemetry);
-    mScoringEnabled = mConfiguration->GetBool(kConfigurationDefaultScoring);
-    mVehiclesEnabled = mConfiguration->GetBool(kConfigurationDefaultVehicles);
+    mTelemetryEnabled = mConfiguration->GetBool(kConfigurationTelemetry);
+    mScoringEnabled = mConfiguration->GetBool(kConfigurationScoring);
+    mVehiclesEnabled = mConfiguration->GetBool(kConfigurationVehicles);
 
     mTelemetrySocket = new UdpSocket(
         mConfiguration->GetString(kConfigurationDestination).c_str(),
